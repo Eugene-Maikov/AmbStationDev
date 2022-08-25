@@ -1,0 +1,42 @@
+.message {
+  background-image: url("../img/bg-message3.jpg");
+  @include bg-cover;
+  padding: 40px 0;
+  height: 40vh;
+  box-shadow: 0 14px 28px rgba(164, 164, 164, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+
+  @include flex-all-center;
+
+  &__inner {
+    @include flex-all-center;
+  }
+  &__img {
+    border-radius: 7px;
+    margin-right: 60px;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: var(--light-color);
+  }
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 60px;
+    width: 750px;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--light-color);
+  }
+  &__btn-box {
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    background-color: var(--light-color);
+  }
+}

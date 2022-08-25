@@ -1,0 +1,10 @@
+.footer{
+  background-color: #ebeff9;
+  @include flex-all-center;
+  height: 60px;
+  border-top: 4px solid #68a0e4;
+  
+  &__copy{
+    color: #2a2a2a;
+  }
+}

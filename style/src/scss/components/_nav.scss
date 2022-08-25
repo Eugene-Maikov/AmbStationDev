@@ -1,0 +1,132 @@
+.nav {
+  background-color: var(--accent-color);
+
+  &__inner {
+    @include flex-all-sb;
+  }
+  &__buttons {
+    display: flex;
+    margin-left: 10px;
+  }
+  &__list {
+    @include flex-all-sb;
+    flex: 1 1 auto;
+  }
+  &__item {
+    width: 100%;
+    position: relative;
+  }
+  &__link {
+    color: var(--light-color);
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+
+    &:hover {
+      background-color: #6490c2;
+    }
+  }
+  .dopmenu {
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      margin-left: 10px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 6px solid var(--light-color);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__sublist {
+    background: var(--light-color);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 100;
+    width: 100%;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: 0.2s ease-in-out;
+  }
+  &__subitem {
+    padding: 7px;
+    &:hover {
+      background-color: rgba(#5680b0, 0.12);
+    }
+  }
+  &__sublink {
+    display: inline-block;
+    padding: 5px;
+    color: #000;
+    width: 100%;
+    font-size: 16px;
+  }
+}
+.nav__list > li:hover .nav__sublist {
+  opacity: 1;
+  transform: scaleY(1);
+}
+.nav__list > li:hover .dopmenu::after {
+  transform: translateY(3px);
+}
+// .nav__list > .nav__item:hover {
+//   background-color: var(--secondary-color);
+// }
+
+//===================== burger ============================
+
+.burger {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  border-radius: 50px;
+  background-color: var(--light-color);
+  position: relative;
+
+  &__line {
+    content: "";
+    width: 17px;
+    height: 2px;
+    border-radius: 6px;
+    background-color: var(--accent-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+    &::after,
+    &:before {
+      content: "";
+      width: 17px;
+      height: 2px;
+      border-radius: 6px;
+      background-color: var(--accent-color);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &::after {
+      margin-top: 5px;
+    }
+    &::before {
+      margin-top: -5px;
+    }
+  }
+}
+
+//===================== search ============================
+
+.search {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: var(--light-color) url("../img/search.svg");
+  @include bg-cover;
+}
