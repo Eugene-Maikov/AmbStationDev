@@ -37,6 +37,9 @@
     justify-content: center;
   }
   &__btn {
+    display: flex;
+    align-items: center;
     background-color: var(--light-color);
+    color: var(--text-dark-color);
   }
 }

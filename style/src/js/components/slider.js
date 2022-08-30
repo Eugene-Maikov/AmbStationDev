@@ -10,20 +10,19 @@ const swiper = new Swiper(".substations__slider", {
     prevEl: ".substations__btn-prev",
   },
 
-  // Управление клавиатурой
-  keyboard: {
-    // Вкл/Выкл
-    enable: true,
-    // Только когда доскролим
-    onlyInViewport: true,
-    // Управление клавишами pageUp, pageDown
-    pageUpDown: true,
-  },
-
-  // Управление колесом мыши
-  mousewheel: {
-    // Чувствительность
-    sensitivity: 1,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
   },
 });
 
@@ -33,21 +32,5 @@ const swiperLogos = new Swiper(".logos__slider", {
   navigation: {
     nextEl: ".logos__btn-next",
     prevEl: ".logos__btn-prev",
-  },
-
-  // Управление клавиатурой
-  keyboard: {
-    // Вкл/Выкл
-    enable: true,
-    // Только когда доскролим
-    onlyInViewport: true,
-    // Управление клавишами pageUp, pageDown
-    pageUpDown: true,
-  },
-
-  // Управление колесом мыши
-  mousewheel: {
-    // Чувствительность
-    sensitivity: 1,
   },
 });

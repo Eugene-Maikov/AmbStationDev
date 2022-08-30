@@ -2,8 +2,8 @@
   <div class="container">
     <div class="nav__inner">
       <ul class="list-reset nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
-        <li class="nav__item"><a href="#" class="nav__link dopmenu">Элемент</a>
+        <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="personnel-list.html" class="nav__link dopmenu">Сотрудники</a>
           <ul class="nav__sublist list-reset">
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
@@ -15,7 +15,7 @@
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
           </ul>
         </li>
-        <li class="nav__item"><a href="#" class="nav__link dopmenu">Элемент</a>
+        <li class="nav__item"><a href="page-item.html" class="nav__link dopmenu">Информация</a>
           <ul class="nav__sublist list-reset">
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
@@ -27,7 +27,7 @@
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
           </ul>
         </li>
-        <li class="nav__item"><a href="#" class="nav__link dopmenu">Элемент</a>
+        <li class="nav__item"><a href="feedback.html" class="nav__link dopmenu">Обратная связь</a>
           <ul class="nav__sublist list-reset">
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
@@ -37,20 +37,7 @@
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
           </ul>
         </li>
-        <li class="nav__item"><a href="#" class="nav__link dopmenu">Элемент</a>
-          <ul class="nav__sublist list-reset">
-            <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
-            <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
-            <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
-          </ul>
-        </li>
-        <li class="nav__item"><a href="#" class="nav__link dopmenu">Элемент</a>
-          <ul class="nav__sublist list-reset">
-            <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
-            <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
-            <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
-          </ul>
-        </li>
+        
         <li class="nav__item"><a href="#" class="nav__link dopmenu">Элемент</a>
           <ul class="nav__sublist list-reset">
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
@@ -68,12 +55,31 @@
 
       </ul>
       <div class="nav__buttons">
-        <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-graph-path="site-map" data-burger>
+        <button class="btn-reset burger burger__site-map" aria-label="Открыть карту сайта" aria-expanded="false"
+          data-graph-path="site-map" data-burger>
+          <span class="burger__line"></span>
+        </button>
+        <button class="btn-reset burger burger__nav" aria-label="Открыть меню" aria-expanded="false" data-burger>
           <span class="burger__line"></span>
         </button>
         <div class="search"></div>
       </div>
+
     </div>
   </div>
 </nav>
-
+<div class="navMobile">
+  <div class="navMobile__inner">
+    <ul class="list-reset navMobile__list">
+      <li class="navMobile__item"><a href="#" class="navMobile__link">Главная</a></li>
+      <li class="navMobile__item"><a href="#" class="navMobile__link">Элемент меню</a></li>
+      <li class="navMobile__item"><a href="#" class="navMobile__link">Элемент меню</a></li>
+      <li class="navMobile__item"><a href="#" class="navMobile__link">Элемент меню</a></li>
+      <li class="navMobile__item"><a href="#" class="navMobile__link">Элемент меню</a></li>
+      <li class="navMobile__item"><a href="#" class="navMobile__link">Элемент меню</a></li>
+      <li class="navMobile__item"><a href="#" class="navMobile__link">Элемент меню</a></li>
+      <li class="navMobile__item"><a href="#" class="navMobile__link">Элемент меню</a></li>
+    </ul>
+  </div>
+  <button class="btn-reset navMobile__close" aria-label="Закрыть модальное окно"></button>
+</div>

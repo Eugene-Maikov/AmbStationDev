@@ -11,6 +11,9 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_modals__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/modals */ "./src/js/components/modals.js");
 /* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/slider */ "./src/js/components/slider.js");
+/* harmony import */ var _components_navMobile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/navMobile */ "./src/js/components/navMobile.js");
+/* harmony import */ var _components_navMobile__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_navMobile__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
@@ -142,6 +145,29 @@ const modal = new graph_modal__WEBPACK_IMPORTED_MODULE_0__["default"]();
 
 /***/ }),
 
+/***/ "./src/js/components/navMobile.js":
+/*!****************************************!*\
+  !*** ./src/js/components/navMobile.js ***!
+  \****************************************/
+/***/ (() => {
+
+document.addEventListener("DOMContentLoaded", function () {
+  let close = document.querySelector(".navMobile__close");
+  let burgerNav = document.querySelector(".burger__nav");
+  let menu = document.querySelector(".navMobile");
+  let body = document.querySelector(".page__body");
+  burgerNav.addEventListener("click", function () {
+    body.classList.add("no-scroll");
+    menu.classList.add("navMobile_active");
+  });
+  close.addEventListener("click", function () {
+    menu.classList.remove("navMobile_active");
+    body.classList.remove("no-scroll");
+  });
+});
+
+/***/ }),
+
 /***/ "./src/js/components/slider.js":
 /*!*************************************!*\
   !*** ./src/js/components/slider.js ***!
@@ -161,19 +187,19 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".substations_
     nextEl: ".substations__btn-next",
     prevEl: ".substations__btn-prev"
   },
-  // Управление клавиатурой
-  keyboard: {
-    // Вкл/Выкл
-    enable: true,
-    // Только когда доскролим
-    onlyInViewport: true,
-    // Управление клавишами pageUp, pageDown
-    pageUpDown: true
-  },
-  // Управление колесом мыши
-  mousewheel: {
-    // Чувствительность
-    sensitivity: 1
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    }
   }
 });
 const swiperLogos = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".logos__slider", {
@@ -181,20 +207,6 @@ const swiperLogos = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".logos__
   navigation: {
     nextEl: ".logos__btn-next",
     prevEl: ".logos__btn-prev"
-  },
-  // Управление клавиатурой
-  keyboard: {
-    // Вкл/Выкл
-    enable: true,
-    // Только когда доскролим
-    onlyInViewport: true,
-    // Управление клавишами pageUp, pageDown
-    pageUpDown: true
-  },
-  // Управление колесом мыши
-  mousewheel: {
-    // Чувствительность
-    sensitivity: 1
   }
 });
 

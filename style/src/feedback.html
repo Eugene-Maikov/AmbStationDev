@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
 @include('partials/head.html')
+
 <body class="page__body">
   <div class="site-container">
     @include('partials/header.html')
@@ -10,10 +11,9 @@
       @include('partials/breadcrumbs.html')
 
       <div class="container">
-        <div class="personnel section-offset">
-          <div class="title">Персонал</div>
-          @include('partials/person.html')
-          @include('partials/list.html')
+        <div class="feedback">
+          <div class="title">Обратная связь</div>
+          @include('partials/forms.html')
         </div>
 
       </div>

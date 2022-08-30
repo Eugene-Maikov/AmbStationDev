@@ -27,7 +27,8 @@
   <div class="container">
     <div class="header__bottom">
       <div class="header__content">
-        <img loading="lazy" src="img/logo.png" class="image" width="95" height="" alt="Логотип Минздрава НН">
+        <a href="index.html"><img loading="lazy" src="img/logo.png" class="image" width="95" height=""
+            alt="Логотип Минздрава НН"></a>
         <h2 class="header__title">
           Государственное бюджетное учреждение здравоохранения Нижегородской области
           <p class="header__text">Станция скорой медицинской помощи г. Нижнего новгорода</p>
@@ -51,8 +52,8 @@
   <div class="container">
     <div class="nav__inner">
       <ul class="list-reset nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
-        <li class="nav__item"><a href="#" class="nav__link dopmenu">Элемент</a>
+        <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="personnel-list.html" class="nav__link dopmenu">Сотрудники</a>
           <ul class="nav__sublist list-reset">
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
@@ -64,7 +65,7 @@
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
           </ul>
         </li>
-        <li class="nav__item"><a href="#" class="nav__link dopmenu">Элемент</a>
+        <li class="nav__item"><a href="page-item.html" class="nav__link dopmenu">Информация</a>
           <ul class="nav__sublist list-reset">
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
@@ -76,7 +77,7 @@
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
           </ul>
         </li>
-        <li class="nav__item"><a href="#" class="nav__link dopmenu">Элемент</a>
+        <li class="nav__item"><a href="feedback.html" class="nav__link dopmenu">Обратная связь</a>
           <ul class="nav__sublist list-reset">
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
@@ -86,20 +87,7 @@
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
           </ul>
         </li>
-        <li class="nav__item"><a href="#" class="nav__link dopmenu">Элемент</a>
-          <ul class="nav__sublist list-reset">
-            <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
-            <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
-            <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
-          </ul>
-        </li>
-        <li class="nav__item"><a href="#" class="nav__link dopmenu">Элемент</a>
-          <ul class="nav__sublist list-reset">
-            <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
-            <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
-            <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
-          </ul>
-        </li>
+
         <li class="nav__item"><a href="#" class="nav__link dopmenu">Элемент</a>
           <ul class="nav__sublist list-reset">
             <li class="nav__subitem"><a class="nav__sublink" href="">Элемент</a></li>
@@ -117,14 +105,34 @@
 
       </ul>
       <div class="nav__buttons">
-        <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-graph-path="site-map" data-burger>
+        <button class="btn-reset burger burger__site-map" aria-label="Открыть карту сайта" aria-expanded="false"
+          data-graph-path="site-map" data-burger>
+          <span class="burger__line"></span>
+        </button>
+        <button class="btn-reset burger burger__nav" aria-label="Открыть меню" aria-expanded="false" data-burger>
           <span class="burger__line"></span>
         </button>
         <div class="search"></div>
       </div>
+
     </div>
   </div>
 </nav>
+<div class="navMobile">
+  <div class="navMobile__inner">
+    <ul class="list-reset navMobile__list">
+      <li class="navMobile__item"><a href="#" class="navMobile__link">Главная</a></li>
+      <li class="navMobile__item"><a href="#" class="navMobile__link">Элемент меню</a></li>
+      <li class="navMobile__item"><a href="#" class="navMobile__link">Элемент меню</a></li>
+      <li class="navMobile__item"><a href="#" class="navMobile__link">Элемент меню</a></li>
+      <li class="navMobile__item"><a href="#" class="navMobile__link">Элемент меню</a></li>
+      <li class="navMobile__item"><a href="#" class="navMobile__link">Элемент меню</a></li>
+      <li class="navMobile__item"><a href="#" class="navMobile__link">Элемент меню</a></li>
+      <li class="navMobile__item"><a href="#" class="navMobile__link">Элемент меню</a></li>
+    </ul>
+  </div>
+  <button class="btn-reset navMobile__close" aria-label="Закрыть модальное окно"></button>
+</div>
 
     <div class="graph-modal">
   <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="site-map">
@@ -140,7 +148,7 @@
               <p class="menu__item"><a class="menu__link" href="#">Элемент меню</a></p>
               <p class="menu__item"><a class="menu__link" href="#">Элемент меню</a></p>
               <p class="menu__item"><a class="menu__link" href="#">Элемент меню</a></p>
-              <p class="menu__item"><a class="menu__link" href="#">Элемент меню</a></p>
+              <p class="menu__item"><a class="menu__link" href="#">Элемент менюЭлемент менюЭлемент меню</a></p>
               <p class="menu__item"><a class="menu__link" href="#">Элемент меню</a></p>
               <p class="menu__item"><a class="menu__link" href="#">Элемент меню</a></p>
               <p class="menu__item"><a class="menu__link" href="#">Элемент меню</a></p>
@@ -231,15 +239,7 @@
               <p class="menu__item"><a class="menu__link" href="#">Элемент меню</a></p>
             </div>
           </div>
-          <div class="menu__box">
-            <h3 class="menu__title">Заголовок меню</h3>
-            <div class="menu__items">
-              <p class="menu__item"><a class="menu__link" href="#">Элемент меню</a></p>
-              <p class="menu__item"><a class="menu__link" href="#">Элемент меню</a></p>
-              <p class="menu__item"><a class="menu__link" href="#">Элемент меню</a></p>
-              <p class="menu__item"><a class="menu__link" href="#">Элемент меню</a></p>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
@@ -291,7 +291,7 @@
           по улучшению качества работы
         </p>
         <div class="message__btn-box">
-          <button class="btn-reset btn message__btn" data-graph-path="">Напиать письмо</button>
+          <a href="feedback.html" class="btn-reset btn message__btn">Напиать письмо</a>
         </div>
       </div>
     </div>
@@ -623,7 +623,7 @@
       <div class="substations__btn-next"></div>
     </div><!-- /.Доп. контейнер -->
     <div class="news__btn-box">
-      <button class="btn-reset btn substations__btn">Все подстанции</button>
+      <!-- <button class="btn-reset btn substations__btn">Все подстанции</button> -->
     </div>
   </div>
 </section>

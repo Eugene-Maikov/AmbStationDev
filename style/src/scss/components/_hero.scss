@@ -1,6 +1,7 @@
 .hero {
   background-image: url("../img/bg-hero2.jpg");
   @include bg-cover;
+  background-position: left;
   height: 80vh;
   position: relative;
 
